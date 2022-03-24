@@ -9,6 +9,6 @@
 
 
 ## useful resources
-
-for creating free icons : https://icons8.com/mega-creator/
-
+ 
+for free icons    : https://icons8.com/mega-creator/
+for glass effect  : https://hype4.academy/tools/glassmorphism-generator

@@ -5,6 +5,11 @@ import {useRouter} from 'next/router'
 
 // components
 import Banner from './components/banner.jsx'
+import Card from './components/card'
+
+// import data
+import coffeeStoreData from '../data/coffee-store.json'
+
 
 export default function Home() {
 
@@ -34,6 +39,22 @@ export default function Home() {
             height={400}
             alt="image here"
           />
+        </div>
+        <div className={styles.cardLayout}>
+          {coffeeStoreData.map((coffeeStore) => {
+            return(
+            <Card
+              key={coffeeStore.id}
+               name={coffeeStore.name}
+               imageUrl={coffeeStore.imgUrl}
+               href={`/coffee-store/${coffeeStore.id}`}
+               className={styles.card}
+             />
+             );
+             
+          })}
+         
+         
         </div>
       </main>
 
